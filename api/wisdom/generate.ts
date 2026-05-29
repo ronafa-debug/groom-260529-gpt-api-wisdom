@@ -8,8 +8,8 @@ import {
   isValidRole,
   isValidSituationForRole,
   setCorsHeaders,
-} from '../lib/wisdom'
-import type { RoleId } from '../../src/types/wisdom'
+} from '../lib/wisdom.js'
+import type { RoleId } from '../lib/types.js'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (handleOptions(req, res)) return

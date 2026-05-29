@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import OpenAI from 'openai'
-import type { RoleId, Wisdom } from '../../src/types/wisdom'
+import type { RoleId, Wisdom } from './types.js'
 
 export const SYSTEM_PROMPT = `당신은 부모와 교사의 마음을 따뜻하게 어루만져 주는 위로 글을 쓰는 동반자입니다.
 

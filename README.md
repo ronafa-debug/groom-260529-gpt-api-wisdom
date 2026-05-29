@@ -153,6 +153,7 @@ npm run lint
 | `vercel dev` 실행 시 Vercel CLI 로그인 필요 | `scripts/dev-api.ts` 로컬 API 서버 추가 (`npm run dev:api`) |
 | 프론트엔드만 실행 시 `/api` 프록시 연결 실패 (`ECONNREFUSED`) | 백엔드·프론트엔드 분리 실행 및 Vite proxy 설정 |
 | 로컬 포트 불일치 | Vite 기본 포트 **5151**, API **3000**으로 고정 |
+| Vercel 배포 500 (`ERR_MODULE_NOT_FOUND`) | API import에 `.js` 확장자 추가, `api/lib/types.ts` 분리, `vercel.json` includeFiles 설정 |
 
 ### 앱 기능·콘텐츠
 

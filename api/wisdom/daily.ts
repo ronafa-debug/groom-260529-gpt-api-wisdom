@@ -5,7 +5,7 @@ import {
   getTodayDate,
   handleOptions,
   setCorsHeaders,
-} from '../lib/wisdom'
+} from '../lib/wisdom.js'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (handleOptions(req, res)) return
